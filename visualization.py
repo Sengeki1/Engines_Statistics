@@ -21,7 +21,7 @@ class Visualization:
                 if self.y2.loc[index, "release_dates"] == self.x[i]:
                     self._y2[i] += 1
 
-    def plot(self):
+    def bar(self):
         plt.title("Unity vs Unreal Engine")
         plt.bar(np.array(self.x) - self.width / 2.0, self._y1, self.width, color='blue')
         plt.bar(np.array(self.x) + self.width / 2.0, self._y2, self.width, color='orange')

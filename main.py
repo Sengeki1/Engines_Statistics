@@ -13,7 +13,7 @@ def main():
     classifier.accuracy()
 
     visualization = Visualization(dataset)
-    visualization.plot()
+    visualization.bar()
 
 if __name__ == "__main__":
     main()
