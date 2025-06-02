@@ -12,7 +12,7 @@ values = ["Unity", "Unreal Engine 1", "Unreal Engine 2, Unreal Engine 3", "Unrea
 dataset = dataset[dataset["engine"].isin(values)]
 
 for index in dataset.index:
-    for i in range(1, 4):
+    for i in range(1, 5):
         if dataset.loc[index, "engine"] == f"Unreal Engine {i}":
             dataset.loc[index, "engine"] = "Unreal"
 

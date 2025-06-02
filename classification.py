@@ -32,8 +32,8 @@ class Classifier:
         
         text = "In the Next few Years the Dominante Game Engine will be"
         if (counter_unity > counter_unreal):
-            print(f"{text} Unity")
-        else: print(f"{text} Unreal")
+            print(f"{text} Unity.")
+        else: print(f"{text} Unreal.")
 
     def accuracy(self):
-        print(f"{accuracy_score(self.output_test, self.output_predict) * 100}%")
+        print(f"{accuracy_score(self.output_test, self.output_predict) * 100}% accuracy score.")
